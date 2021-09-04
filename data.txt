@@ -1,0 +1,30 @@
+Information about insured person
+Name: dhdhd
+Surname: dhdhd
+Street: dhdhd
+House number: 16
+Postal: 1000
+Date of birth: 2021-09-16
+Experience: Experienced
+
+Vehicle data
+Make: gdgd
+Model: dgdgd
+Type: Car
+Fuel: Diesel
+Kw: 100
+Seats: 5
+Tank: 50
+Color: 0xffffffff
+
+Info about Insurer
+Basic insurance: AO+
+Kasko insurance: Experienced
+Other insurances:
+
+Registration data
+Month: January
+Day: 31
+Year: 2021
+Designation of registration: dhdhd
+End of first registration: dgdgd

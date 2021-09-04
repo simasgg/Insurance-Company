@@ -1,0 +1,539 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.input.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<GridPane fx:id="grid" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="750.0" prefWidth="680.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+    <columnConstraints>
+        <ColumnConstraints hgrow="SOMETIMES" maxWidth="357.0" minWidth="10.0" prefWidth="300.0" />
+        <ColumnConstraints hgrow="SOMETIMES" maxWidth="388.0" minWidth="10.0" prefWidth="380.0" />
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints maxHeight="297.8" minHeight="10.0" prefHeight="27.6" vgrow="SOMETIMES" />
+        <RowConstraints maxHeight="391.1999961853027" minHeight="10.0" prefHeight="233.8" vgrow="SOMETIMES" />
+        <RowConstraints maxHeight="346.2" minHeight="10.0" prefHeight="202.60000000000002" vgrow="SOMETIMES" />
+        <RowConstraints maxHeight="287.4" minHeight="10.0" prefHeight="287.4" vgrow="SOMETIMES" />
+    </rowConstraints>
+    <children>
+        <GridPane fx:id="fstGrid" prefWidth="659.0" GridPane.columnSpan="2147483647" GridPane.rowIndex="1">
+            <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="113.80000000000001" minWidth="10.0" prefWidth="113.80000000000001" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="211.0" minWidth="10.0" prefWidth="163.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="174.2" minWidth="10.0" prefWidth="165.59999999999997" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="226.0" minWidth="10.0" prefWidth="177.39999999999998" />
+            </columnConstraints>
+            <rowConstraints>
+                <RowConstraints />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            </rowConstraints>
+            <children>
+                <Label text="Vehicle Data" GridPane.columnSpan="4" GridPane.rowIndex="1">
+                    <font>
+                        <Font name="System Bold" size="16.0" />
+                    </font>
+                    <GridPane.margin>
+                        <Insets left="20.0" />
+                    </GridPane.margin></Label>
+                <Label text="Make" GridPane.halignment="LEFT" GridPane.rowIndex="2">
+                    <GridPane.margin>
+                        <Insets left="20.0" />
+                    </GridPane.margin>
+                    <font>
+                        <Font name="System Bold" size="12.0" />
+                    </font></Label>
+                <Label text="Kw" GridPane.columnIndex="2" GridPane.halignment="LEFT" GridPane.rowIndex="2">
+                    <GridPane.margin>
+                        <Insets left="30.0" />
+                    </GridPane.margin>
+                    <font>
+                        <Font name="System Bold" size="12.0" />
+                    </font></Label>
+                <Spinner fx:id="kw" maxWidth="1.7976931348623157E308" GridPane.columnIndex="3" GridPane.hgrow="ALWAYS" GridPane.rowIndex="2" GridPane.vgrow="ALWAYS">
+                    <GridPane.margin>
+                        <Insets />
+                    </GridPane.margin></Spinner>
+                <Label text="Model" GridPane.halignment="LEFT" GridPane.rowIndex="3">
+                    <GridPane.margin>
+                        <Insets left="20.0" />
+                    </GridPane.margin>
+                    <font>
+                        <Font name="System Bold" size="12.0" />
+                    </font></Label>
+                <Label text="Fuel type" GridPane.columnIndex="2" GridPane.halignment="LEFT" GridPane.rowIndex="3">
+                    <GridPane.margin>
+                        <Insets left="30.0" />
+                    </GridPane.margin>
+                    <font>
+                        <Font name="System Bold" size="12.0" />
+                    </font></Label>
+                <Label text="Color" GridPane.columnIndex="2" GridPane.halignment="LEFT" GridPane.rowIndex="4">
+                    <GridPane.margin>
+                        <Insets left="30.0" />
+                    </GridPane.margin>
+                    <font>
+                        <Font name="System Bold" size="12.0" />
+                    </font></Label>
+                <TextField fx:id="make_input" maxWidth="1.7976931348623157E308" promptText="Enter the make of vehicle" GridPane.columnIndex="1" GridPane.hgrow="ALWAYS" GridPane.rowIndex="2" />
+                <Label text="Number of seats" GridPane.columnIndex="2" GridPane.halignment="LEFT" GridPane.rowIndex="5">
+                    <GridPane.margin>
+                        <Insets left="30.0" />
+                    </GridPane.margin>
+                    <font>
+                        <Font name="System Bold" size="12.0" />
+                    </font></Label>
+                <Spinner fx:id="seats" maxWidth="1.7976931348623157E308" GridPane.columnIndex="3" GridPane.hgrow="ALWAYS" GridPane.rowIndex="5" GridPane.vgrow="ALWAYS" />
+                <Label text="Fuel Tank Capacity" GridPane.columnIndex="2" GridPane.halignment="LEFT" GridPane.rowIndex="6">
+                    <GridPane.margin>
+                        <Insets left="30.0" />
+                    </GridPane.margin>
+                    <font>
+                        <Font name="System Bold" size="12.0" />
+                    </font></Label>
+                <Spinner fx:id="tank" maxWidth="1.7976931348623157E308" GridPane.columnIndex="3" GridPane.hgrow="ALWAYS" GridPane.rowIndex="6" GridPane.vgrow="ALWAYS">
+                    <GridPane.margin>
+                        <Insets />
+                    </GridPane.margin></Spinner>
+                <Label text="Type of Vehicle" GridPane.halignment="LEFT" GridPane.rowIndex="5">
+                    <GridPane.margin>
+                        <Insets left="20.0" />
+                    </GridPane.margin>
+                    <font>
+                        <Font name="System Bold" size="12.0" />
+                    </font></Label>
+                <ChoiceBox fx:id="type" maxWidth="1.7976931348623157E308" prefWidth="150.0" GridPane.columnIndex="1" GridPane.hgrow="ALWAYS" GridPane.rowIndex="5" />
+                <ColorPicker fx:id="color" maxWidth="1.7976931348623157E308" GridPane.columnIndex="3" GridPane.hgrow="ALWAYS" GridPane.rowIndex="4" GridPane.vgrow="ALWAYS" />
+                <ChoiceBox fx:id="fuel" maxWidth="1.7976931348623157E308" GridPane.columnIndex="3" GridPane.hgrow="ALWAYS" GridPane.rowIndex="3" GridPane.vgrow="ALWAYS">
+                    <GridPane.margin>
+                        <Insets />
+                    </GridPane.margin></ChoiceBox>
+                <TextField fx:id="model_input" maxWidth="1.7976931348623157E308" promptText="Enter the model of vehicle" GridPane.columnIndex="1" GridPane.hgrow="ALWAYS" GridPane.rowIndex="3" />
+            </children>
+            <GridPane.margin>
+                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+            </GridPane.margin>
+            <padding>
+                <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
+            </padding>
+        </GridPane>
+        <GridPane fx:id="sndGrid" GridPane.columnSpan="2147483647" GridPane.rowIndex="2">
+            <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="197.0" minWidth="10.0" prefWidth="112.00000762939453" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="255.0" minWidth="10.0" prefWidth="163.59999999999997" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="220.0" minWidth="10.0" prefWidth="167.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="229.0" minWidth="10.0" prefWidth="175.99999999999994" />
+            </columnConstraints>
+            <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            </rowConstraints>
+            <children>
+                <Label text="Postal code" GridPane.columnIndex="2" GridPane.halignment="LEFT" GridPane.rowIndex="3">
+                    <GridPane.margin>
+                        <Insets left="30.0" />
+                    </GridPane.margin>
+                    <font>
+                        <Font name="System Bold" size="12.0" />
+                    </font></Label>
+                <Label text="House no." GridPane.halignment="LEFT" GridPane.rowIndex="3">
+                    <padding>
+                        <Insets right="10.0" />
+                    </padding>
+                    <GridPane.margin>
+                        <Insets left="20.0" />
+                    </GridPane.margin>
+                    <font>
+                        <Font name="System Bold" size="12.0" />
+                    </font></Label>
+                <Label text="Street" GridPane.halignment="LEFT" GridPane.rowIndex="2">
+                    <GridPane.margin>
+                        <Insets left="20.0" />
+                    </GridPane.margin>
+                    <padding>
+                        <Insets right="10.0" />
+                    </padding>
+                    <font>
+                        <Font name="System Bold" size="12.0" />
+                    </font></Label>
+                <Label text="Information about insured person" GridPane.columnSpan="4">
+                    <font>
+                        <Font name="System Bold" size="16.0" />
+                    </font>
+                    <GridPane.margin>
+                        <Insets left="20.0" />
+                    </GridPane.margin></Label>
+                <Label text="Name" GridPane.halignment="LEFT" GridPane.rowIndex="1">
+                    <padding>
+                        <Insets right="10.0" />
+                    </padding>
+                    <GridPane.margin>
+                        <Insets left="20.0" />
+                    </GridPane.margin>
+                    <font>
+                        <Font name="System Bold" size="12.0" />
+                    </font></Label>
+                <Label text="Surname" GridPane.columnIndex="2" GridPane.halignment="LEFT" GridPane.rowIndex="1">
+                    <GridPane.margin>
+                        <Insets left="30.0" />
+                    </GridPane.margin>
+                    <font>
+                        <Font name="System Bold" size="12.0" />
+                    </font></Label>
+                <TextField fx:id="name_input" maxWidth="1.7976931348623157E308" promptText="Enter your name" GridPane.columnIndex="1" GridPane.hgrow="ALWAYS" GridPane.rowIndex="1" />
+                <TextField fx:id="house_nr_input" maxWidth="1.7976931348623157E308" promptText="Enter house number" GridPane.columnIndex="1" GridPane.hgrow="ALWAYS" GridPane.rowIndex="3" />
+                <TextField fx:id="postal_input" maxWidth="1.7976931348623157E308" promptText="Enter postal code" GridPane.columnIndex="3" GridPane.hgrow="ALWAYS" GridPane.rowIndex="3" />
+                <TextField fx:id="surname_input" maxWidth="1.7976931348623157E308" promptText="Enter your surname" GridPane.columnIndex="3" GridPane.hgrow="ALWAYS" GridPane.rowIndex="1" />
+                <HBox maxWidth="1.7976931348623157E308" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.columnSpan="2147483647" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="4">
+                    <children>
+                        <Label text="Experience">
+                            <padding>
+                                <Insets left="10.0" right="10.0" />
+                            </padding>
+                            <HBox.margin>
+                                <Insets left="20.0" />
+                            </HBox.margin>
+                            <font>
+                                <Font name="System Bold" size="12.0" />
+                            </font></Label>
+                        <RadioButton mnemonicParsing="false" selected="true" text="Beginner" textFill="#1701ff">
+                            <toggleGroup>
+                                <ToggleGroup fx:id="radioGroup" />
+                            </toggleGroup>
+                            <padding>
+                                <Insets right="5.0" />
+                            </padding>
+                            <HBox.margin>
+                                <Insets left="30.0" />
+                            </HBox.margin>
+                            <font>
+                                <Font name="System Bold" size="12.0" />
+                            </font>
+                        </RadioButton>
+                        <RadioButton mnemonicParsing="false" selected="true" text="Experienced" textFill="#1701ff" toggleGroup="$radioGroup">
+                            <padding>
+                                <Insets right="10.0" />
+                            </padding>
+                            <HBox.margin>
+                                <Insets left="20.0" />
+                            </HBox.margin>
+                            <font>
+                                <Font name="System Bold" size="12.0" />
+                            </font></RadioButton>
+                    </children>
+                    <GridPane.margin>
+                        <Insets top="10.0" />
+                    </GridPane.margin>
+                </HBox>
+                <TextField fx:id="street_input" maxWidth="1.7976931348623157E308" promptText="Enter your street of residence" GridPane.columnIndex="1" GridPane.columnSpan="2147483647" GridPane.hgrow="ALWAYS" GridPane.rowIndex="2" />
+                <DatePicker fx:id="date_input" maxWidth="1.7976931348623157E308" promptText="Enter the date" GridPane.columnIndex="1" GridPane.hgrow="ALWAYS" GridPane.rowIndex="4" />
+                <Label text="Date of birth" GridPane.halignment="LEFT" GridPane.rowIndex="4">
+                    <GridPane.margin>
+                        <Insets left="20.0" />
+                    </GridPane.margin>
+                    <padding>
+                        <Insets right="10.0" />
+                    </padding>
+                    <font>
+                        <Font name="System Bold" size="12.0" />
+                    </font></Label>
+            </children>
+            <GridPane.margin>
+                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+            </GridPane.margin>
+            <padding>
+                <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
+            </padding>
+        </GridPane>
+        <GridPane fx:id="leftBox" GridPane.rowIndex="3">
+            <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+            </columnConstraints>
+            <rowConstraints>
+                <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="31.6" minHeight="10.0" prefHeight="31.6" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="39.59999618530274" minHeight="10.0" prefHeight="23.599999999999994" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="93.0" minHeight="10.0" prefHeight="23.80000000000001" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="86.6" minHeight="10.0" prefHeight="32.599999999999994" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="84.79999999999998" minHeight="10.0" prefHeight="81.79999999999998" vgrow="SOMETIMES" />
+            </rowConstraints>
+            <children>
+                <Label text="Info about insurer">
+                    <font>
+                        <Font name="System Bold" size="16.0" />
+                    </font></Label>
+                <HBox GridPane.halignment="LEFT" GridPane.hgrow="ALWAYS" GridPane.rowIndex="1">
+                    <children>
+                        <Label text="Basic Insurance:" />
+                        <RadioButton mnemonicParsing="false" selected="true" text="AO" textFill="#1701ff">
+                            <padding>
+                                <Insets right="10.0" />
+                            </padding>
+                            <HBox.margin>
+                                <Insets left="15.0" />
+                            </HBox.margin>
+                            <font>
+                                <Font name="System Bold" size="12.0" />
+                            </font>
+                            <toggleGroup>
+                                <ToggleGroup fx:id="basicGroup" />
+                            </toggleGroup>
+                        </RadioButton>
+                        <RadioButton mnemonicParsing="false" selected="true" text="AO+" textFill="#1701ff" toggleGroup="$basicGroup">
+                            <padding>
+                                <Insets right="10.0" />
+                            </padding>
+                            <HBox.margin>
+                                <Insets left="7.0" />
+                            </HBox.margin>
+                            <font>
+                                <Font name="System Bold" size="12.0" />
+                            </font>
+                        </RadioButton>
+                    </children>
+                    <GridPane.margin>
+                        <Insets top="10.0" />
+                    </GridPane.margin>
+                </HBox>
+                <Label text="Kasko insurance:" GridPane.rowIndex="2">
+                    <font>
+                        <Font name="System Italic" size="12.0" />
+                    </font></Label>
+                <HBox GridPane.halignment="LEFT" GridPane.hgrow="ALWAYS" GridPane.rowIndex="3">
+                    <children>
+                        <RadioButton mnemonicParsing="false" selected="true" text="Full" textFill="#1701ff">
+                            <toggleGroup>
+                                <ToggleGroup fx:id="kaskoGroup" />
+                            </toggleGroup>
+                            <padding>
+                                <Insets right="10.0" />
+                            </padding>
+                            <font>
+                                <Font name="System Bold" size="12.0" />
+                            </font>
+                        </RadioButton>
+                        <RadioButton mnemonicParsing="false" selected="true" text="Deductible" textFill="#1701ff" toggleGroup="$kaskoGroup">
+                            <padding>
+                                <Insets right="10.0" />
+                            </padding>
+                            <HBox.margin>
+                                <Insets left="5.0" />
+                            </HBox.margin>
+                            <font>
+                                <Font name="System Bold" size="12.0" />
+                            </font>
+                        </RadioButton>
+                        <RadioButton mnemonicParsing="false" selected="true" text="Without" textFill="#1701ff" toggleGroup="$kaskoGroup">
+                            <padding>
+                                <Insets right="10.0" />
+                            </padding>
+                            <HBox.margin>
+                                <Insets left="5.0" />
+                            </HBox.margin>
+                            <font>
+                                <Font name="System Bold" size="12.0" />
+                            </font>
+                        </RadioButton>
+                    </children>
+                    <GridPane.margin>
+                        <Insets top="10.0" />
+                    </GridPane.margin>
+                </HBox>
+                <Label prefHeight="23.0" prefWidth="112.0" text="Additional insurances" GridPane.rowIndex="4">
+                    <font>
+                        <Font name="System Italic" size="12.0" />
+                    </font></Label>
+                <GridPane GridPane.rowIndex="5">
+                    <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                        <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                    <children>
+                        <CheckBox fx:id="glass" mnemonicParsing="false" text="Glass ins." textFill="#1701ff">
+                            <font>
+                                <Font name="System Bold" size="12.0" />
+                            </font>
+                        </CheckBox>
+                        <CheckBox fx:id="parking" mnemonicParsing="false" text="Parking ins." textFill="#1701ff" GridPane.columnIndex="1">
+                            <font>
+                                <Font name="System Bold" size="12.0" />
+                            </font>
+                        </CheckBox>
+                        <CheckBox fx:id="passenger" mnemonicParsing="false" text="Passenger ins." textFill="#1701ff" GridPane.rowIndex="1">
+                            <font>
+                                <Font name="System Bold" size="12.0" />
+                            </font>
+                        </CheckBox>
+                        <CheckBox fx:id="third" mnemonicParsing="false" text="Third party ins." textFill="#1701ff" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                            <font>
+                                <Font name="System Bold" size="12.0" />
+                            </font>
+                        </CheckBox>
+                        <CheckBox fx:id="theft" mnemonicParsing="false" text="Theft ins." textFill="#1701ff" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                            <font>
+                                <Font name="System Bold" size="12.0" />
+                            </font>
+                        </CheckBox>
+                        <CheckBox fx:id="hail" mnemonicParsing="false" text="Hail ins." textFill="#1701ff" GridPane.rowIndex="2">
+                            <font>
+                                <Font name="System Bold" size="12.0" />
+                            </font>
+                        </CheckBox>
+                    </children>
+                </GridPane>
+            </children>
+            <GridPane.margin>
+                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+            </GridPane.margin>
+            <padding>
+                <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+            </padding>
+        </GridPane>
+        <GridPane fx:id="rightBox" GridPane.columnIndex="1" GridPane.rowIndex="3">
+            <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="176.6" minWidth="10.0" prefWidth="146.2" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="223.59999999999997" minWidth="10.0" prefWidth="173.0" />
+            </columnConstraints>
+            <rowConstraints>
+                <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            </rowConstraints>
+            <children>
+                <Label text="Registration data" GridPane.columnSpan="2">
+                    <font>
+                        <Font name="System Bold" size="16.0" />
+                    </font></Label>
+                <HBox prefWidth="168.0" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+                    <children>
+                        <Label text="Month of registration">
+                            <HBox.margin>
+                                <Insets />
+                            </HBox.margin>
+                            <padding>
+                                <Insets top="10.0" />
+                            </padding></Label>
+                    </children>
+                    <GridPane.margin>
+                        <Insets />
+                    </GridPane.margin>
+                </HBox>
+                <HBox GridPane.rowIndex="2">
+                    <children>
+                        <Label text="Day of registration">
+                            <padding>
+                                <Insets top="10.0" />
+                            </padding></Label>
+                    </children>
+                    <GridPane.margin>
+                        <Insets />
+                    </GridPane.margin>
+                </HBox>
+                <HBox GridPane.rowIndex="3">
+                    <children>
+                        <Label text="Year of registration">
+                            <HBox.margin>
+                                <Insets />
+                            </HBox.margin>
+                            <padding>
+                                <Insets top="10.0" />
+                            </padding></Label>
+                    </children>
+                </HBox>
+                <HBox GridPane.rowIndex="4">
+                    <children>
+                        <Label text="Designation of registration">
+                            <HBox.margin>
+                                <Insets />
+                            </HBox.margin>
+                            <padding>
+                                <Insets top="10.0" />
+                            </padding></Label>
+                    </children>
+                </HBox>
+                <HBox GridPane.rowIndex="5">
+                    <children>
+                        <Label text="End of first registration">
+                            <HBox.margin>
+                                <Insets />
+                            </HBox.margin>
+                            <padding>
+                                <Insets top="10.0" />
+                            </padding></Label>
+                    </children>
+                </HBox>
+                <ChoiceBox fx:id="month" maxWidth="1.7976931348623157E308" prefWidth="150.0" GridPane.columnIndex="1" GridPane.hgrow="ALWAYS" GridPane.rowIndex="1" />
+                <ChoiceBox fx:id="day" maxWidth="1.7976931348623157E308" prefWidth="150.0" GridPane.columnIndex="1" GridPane.hgrow="ALWAYS" GridPane.rowIndex="2" />
+                <ChoiceBox fx:id="year" maxWidth="1.7976931348623157E308" prefWidth="150.0" GridPane.columnIndex="1" GridPane.hgrow="ALWAYS" GridPane.rowIndex="3" />
+                <TextField fx:id="registration_input" maxWidth="1.7976931348623157E308" GridPane.columnIndex="1" GridPane.hgrow="ALWAYS" GridPane.rowIndex="4" />
+                <TextField fx:id="end_input" maxWidth="1.7976931348623157E308" GridPane.columnIndex="1" GridPane.hgrow="ALWAYS" GridPane.rowIndex="5" />
+                <Button maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#btn_reset" text="Reset" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="6">
+                    <GridPane.margin>
+                        <Insets bottom="5.0" left="10.0" right="10.0" top="10.0" />
+                    </GridPane.margin>
+                    <font>
+                        <Font name="System Bold" size="12.0" />
+                    </font></Button>
+                <Button maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#btn_save" text="Save" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="6">
+                    <GridPane.margin>
+                        <Insets bottom="5.0" left="20.0" right="20.0" top="10.0" />
+                    </GridPane.margin>
+                    <font>
+                        <Font name="System Bold" size="12.0" />
+                    </font></Button>
+            </children>
+            <GridPane.margin>
+                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+            </GridPane.margin>
+            <padding>
+                <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+            </padding>
+        </GridPane>
+        <MenuBar maxWidth="1.7976931348623157E308" GridPane.columnSpan="2147483647" GridPane.hgrow="ALWAYS" GridPane.vgrow="ALWAYS">
+            <menus>
+                <Menu text="_File">
+                    <items>
+                        <MenuItem onAction="#toOpen" text="_Open">
+                            <accelerator>
+                                <KeyCodeCombination alt="UP" code="O" control="DOWN" meta="UP" shift="UP" shortcut="UP" />
+                            </accelerator></MenuItem>
+                    </items>
+                </Menu>
+                <Menu text="_Exit">
+                    <items>
+                        <MenuItem mnemonicParsing="false" onAction="#toExit" text="Exit program">
+                            <accelerator>
+                                <KeyCodeCombination alt="UP" code="E" control="DOWN" meta="UP" shift="UP" shortcut="UP" />
+                            </accelerator></MenuItem>
+                    </items>
+                </Menu>
+                <Menu text="_Help">
+                    <items>
+                        <MenuItem onAction="#toAbout" text="_About">
+                            <accelerator>
+                                <KeyCodeCombination alt="UP" code="A" control="DOWN" meta="UP" shift="UP" shortcut="UP" />
+                            </accelerator></MenuItem>
+                    </items>
+                </Menu>
+            </menus>
+        </MenuBar>
+    </children>
+</GridPane>
